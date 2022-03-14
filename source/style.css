@@ -1,0 +1,150 @@
+/* reset */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.a11y-elem {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    z-index: -1000;
+    -webkit-user-select: none;
+}
+
+/* styles */
+
+/*header*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    /* -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72); */
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo small {
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 80%;
+}
+
+.nav-logo strong {
+    display: block;
+    font-size: 24px;
+}
+
+nav ul {
+    right: 0;
+    display: flex;
+    gap: 70px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    color: black;
+}
+
+/* main */
+#home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home div {
+    position: absolute;
+    top: 233px;
+    text-align: center;
+}
+
+#home .home-title {
+    font-size: 96px;
+    font-weight: bold;
+}
+
+#home .home-desc {
+    margin-top: 28px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#resume {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 60px;
+}
+
+#resume .resume-wrap {
+    margin: 222px 0 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#resume div strong {
+    font-size: 78px;
+    font-weight: 700;
+    white-space: pre-line;
+}
+
+#resume .resume-subtitle {
+    margin-top: 14px;
+}
+
+#resume .resume-subtitle p:nth-child(1) {
+    font-size: 36px;
+    font-weight: 500;
+    white-space: pre-line;
+}
+
+#resume .resume-subtitle p:nth-child(2) {
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 400;
+    white-space: pre-line;
+}
+
+#resume article {
+    padding: 50px 45px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background-color: #FBFBFD;
+}
+
+#resume article h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#resume article dl {
+    display: flex;
+    flex-wrap: wrap;
+}

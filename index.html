@@ -5,37 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Kim moon hong</title>
+    <link rel="stylesheet" href="source/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <p>Frontend Developer</p>
-                <p>Kim moon hong</p>
+            <div class="nav-logo">
+                <small>Frontend Developer</small>
+                <strong>Kim moon hong</strong>
             </div>
             <ul>
-                <li><a>이력서</a></li>
-                <li><a>포트폴리오</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>김문홍 개발자 이력서페이지</h1>
-        <section>
-            <h2>메인화면</h2>
+        <h1 class="a11y-elem">김문홍 개발자 이력서페이지</h1>
+        <section id="home">
+            <h2 class="a11y-elem">홈 화면</h2>
+            <img src="./source/images/nathan-watson-0If4NyeDOpU-unsplash.jpg" alt="">
             <div>
-                <p>성장하는 개발자</p>
-                <p>프론트엔드 개발자 김문홍 입니다.</p>
+                <p class="home-title">성장하는 개발자</p>
+                <p class="home-desc">프론트엔드 개발자 김문홍 입니다.</p>
             </div>
         </section>
-        <section>
-            <h2>이력서</h2>
-            <div>
-                <p>안녕하세요 
-                    김문홍입니다.</p>
-                <p>다양한 경험을 통해, 
-                    언제나 발전하고 싶은 
-                    개발자 입니다.</p>
+        <section id="resume">
+            <h2 class="a11y-elem">이력서</h2>
+            <div class="resume-wrap">
+                <strong>안녕하세요😍
+                    김문홍입니다.</strong>
+                <div class="resume-subtitle">
+                    <p>다양한 경험을 통해, 
+                        언제나 발전하고 있는 
+                        개발자 입니다.</p>
+                    <p>사람들에게 이로운 가치를 전달하고 싶습니다.
+                        모든 사람들이 누릴 수 있는 웹 경험을
+                        위해 접근성 부분에서 노력하고 있습니다.</p> 
+                </div>
             </div>
             <article>
                 <h3>인적사항</h3>
@@ -83,7 +90,7 @@
             </article>
             <img src="" alt="">
         </section>
-        <section>
+        <section id="portfolio">
             <h2>포트폴리오</h2>
             <article>
                 <h3>감귤마켓</h3>
