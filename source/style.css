@@ -9,6 +9,7 @@
     box-sizing: border-box;
     list-style: none;
     line-height: 1.5;
+    color: #1d1d1f;
 }
 
 .a11y-elem {
@@ -18,6 +19,7 @@
     position: absolute;
     white-space: nowrap;
     z-index: -1000;
+    user-select: none;
     -webkit-user-select: none;
 }
 
@@ -33,6 +35,12 @@ header {
     background-color: rgba(255,255,255,0.72); */
 }
 
+scroll-actvie {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72);
+}
+
 nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -44,7 +52,7 @@ nav {
 
 .nav-logo small {
     font-size: 14px;
-    font-weight: normal;
+    font-weight:400;
     opacity: 80%;
 }
 
@@ -61,7 +69,7 @@ nav ul {
 
 nav ul li a{
     font-size: 18px;
-    color: black;
+    color: #1d1d1f;
 }
 
 /* main */
@@ -150,7 +158,7 @@ nav ul li a{
     margin-top: 10px;
     width: 50px;
     height: 5px;
-    background-color: #000000;
+    background-color: #1d1d1f;
 }
 
 #resume article h3 {
@@ -162,10 +170,14 @@ nav ul li a{
 
 #resume article dl {
     flex: 2.2;
-    font-size: 24px;
+    font-size: 18px;
     left: 500px;
     display: flex;
     flex-wrap: wrap;
+}
+
+#resume article dl a {
+    color: #86868b;
 }
 
 #resume article dl div {
@@ -178,17 +190,19 @@ nav ul li a{
 }
 
 #resume article dl dt {
+    width: 14%;
     font-weight: 500;
 }
 
 #resume article dl dd {
     margin-left: 10px;
-    font-weight: 250;
+    font-weight: 400;
+    color:#86868b;
 }
 
 #resume article ul {
     flex: 2.2;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 #resume article ul li {
@@ -257,14 +271,16 @@ nav ul li a{
 }
 
 #portfolio article dl div dt {
-    font-size: 24px;
+    width: 12%;
+    font-size: 18px;
     font-weight: 400;
 }
 
 #portfolio article dl div dd {
     margin-left: 20px;
-    font-size: 24px;
-    font-weight: 250;
+    font-size: 18px;
+    font-weight: 400;
+    color: #86868b;
 }
 
 #portfolio .preview-img {
