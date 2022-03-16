@@ -133,7 +133,7 @@ nav ul li a{
 
 #resume .resume-subtitle p:nth-child(1) {
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 700;
     white-space: pre-line;
 }
 
@@ -141,6 +141,7 @@ nav ul li a{
     margin-top: 32px;
     font-size: 24px;
     font-weight: 400;
+    color: #86868b;
     white-space: pre-line;
 }
 
@@ -304,6 +305,34 @@ nav ul li a{
 /* footer */
 footer {
     margin-top: 200px;
-    height: 400px;
+    padding: 80px 0;
     background-color: #F5F5F7;
+}
+
+footer .footer-inner {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 60px;
+}
+
+.footer-inner .footer-profile li:first-of-type {
+    margin-bottom: 25px;
+}
+
+.footer-inner .footer-social {
+    position: absolute;
+    float: left;
+    padding: 10px 60px;
+    right: 0;
+    top: 0;
+}
+
+.footer-inner .footer-social li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.footer-inner .footer-social img{
+    width: 32px;
 }
