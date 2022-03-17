@@ -43,12 +43,10 @@ scroll-actvie {
 }
 
 nav {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 @media only screen and (max-width:520px) {
@@ -69,9 +67,10 @@ nav {
 }
 
 nav ul {
-    right: 0;
-    display: flex;
-    gap: 70px;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    transform: translateY(50%);
 }
 
 @media only screen and (max-width:750px) {
@@ -82,6 +81,11 @@ nav ul {
     .a11y-nav {
         display: block;
     }
+}
+
+nav ul li {
+    margin-left: 20px;
+    float: left;
 }
 
 nav ul li a{
@@ -138,10 +142,16 @@ nav ul li a{
     }
 }
 
-#resume .resume-wrap {
+#resume .resume-inner {
     margin: 222px 0 120px;
     display: flex;
     justify-content: space-between;
+}
+
+@media only screen and (max-width:960px) {
+    #resume .resume-inner {
+        display: block;
+    }
 }
 
 #resume div strong {
@@ -150,8 +160,33 @@ nav ul li a{
     white-space: pre-line;
 }
 
+@media only screen and (max-width:1079px) {
+    #resume div strong {
+        font-size: 64px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    #resume div strong {
+        font-size: 48px;
+    }
+}
+
 #resume .resume-subtitle {
     margin-top: 14px;
+}
+
+@media only screen and (max-width:960px) {
+    #resume .resume-subtitle {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width:689px) {
+    #resume .resume-subtitle {
+        display: block;
+    }
 }
 
 #resume .resume-subtitle p:nth-child(1) {
@@ -166,6 +201,25 @@ nav ul li a{
     font-weight: 400;
     color: #86868b;
     white-space: pre-line;
+}
+
+@media only screen and (max-width:960px) {
+    #resume .resume-subtitle p:nth-child(1) {
+        font-size: 24px;
+        white-space: pre-line;
+    }
+    
+    #resume .resume-subtitle p:nth-child(2) {
+        margin-top: 0;
+        font-size: 18px;
+        white-space: pre;
+    }
+}
+
+@media only screen and (max-width:689px) {
+    #resume .resume-subtitle p:nth-child(2) {
+        margin-top: 32px;
+    }
 }
 
 #resume article {
@@ -206,7 +260,7 @@ nav ul li a{
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width:909px) {
+@media only screen and (max-width:960px) {
     #resume article dl {
         flex: auto;
     }
@@ -275,7 +329,7 @@ nav ul li a{
     font-size: 18px;
 }
 
-@media only screen and (max-width:909px) {
+@media only screen and (max-width:960px) {
     #resume article ul {
         flex: auto;
         width: 100%;
@@ -312,10 +366,23 @@ nav ul li a{
 }
 
 #portfolio h2 {
+    width: 100%;
     margin-top: 96px;
     font-size: 96px;
     font-weight: 700;
     text-align: center;
+}
+
+@media only screen and (max-width:750px) {
+    #portfolio h2 {
+        font-size: 72px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    #portfolio h2 {
+        font-size: 48px;
+    }
 }
 
 #portfolio article {
@@ -329,10 +396,20 @@ nav ul li a{
 
 @media only screen and (max-width:976px) {
     #portfolio article {
-        width: 50%;
-        height: 50%;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        border: solid 1px #F5F5F7;
     }
 }
+
+/* @media only screen and (max-width:750px) {
+    #portfolio article {
+        width: 100%;
+        height: 100%;
+    }
+} */
 
 #portfolio article h3 {
     margin-top: 25px;
@@ -392,10 +469,10 @@ nav ul li a{
     float: right;
     position: absolute;
     top: 50%;
+    right: 45px;
+    overflow: hidden;
     background-color: #ffffff;
     transform: translateY(-50%);
-    right: 45px;
-    border-radius: 10px;
 }
 
 @media only screen and (max-width:976px) {
@@ -408,8 +485,6 @@ nav ul li a{
         left: 50%;
         background-color: #ffffff;
         transform: translateY(-50%) translateX(-50%);
-        right: 45px;
-        border-radius: 10px;
     }
 }
 
@@ -433,6 +508,12 @@ footer .footer-inner {
     padding: 10px 60px;
 }
 
+@media only screen and (max-width:520px) {
+    footer .footer-inner {
+        padding: 10px 30px;
+    }
+}
+
 .footer-inner .footer-profile li:first-of-type {
     margin-bottom: 25px;
 }
@@ -443,6 +524,12 @@ footer .footer-inner {
     padding: 10px 60px;
     right: 0;
     top: 0;
+}
+
+@media only screen and (max-width:520px) {
+    .footer-inner .footer-social {
+        padding: 10px 30px;
+    }
 }
 
 .footer-inner .footer-social li {
