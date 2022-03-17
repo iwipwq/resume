@@ -541,5 +541,16 @@ footer .footer-inner {
     width: 32px;
 }
 
+.footer-legal {
+    padding: 10px 0;
+    margin-top: 1em;
+    border-top: solid 1px #d2d2d7;
+    width: 100%;
+}
+
+.footer-legal .copyright {
+    font-size: smaller;
+    color: #6e6e73;
+}
 
 
