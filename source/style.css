@@ -170,11 +170,17 @@ nav ul li a{
 }
 
 #resume article dl {
+    display: flex;
     flex: 2.2;
     font-size: 18px;
     left: 500px;
-    display: flex;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width:909px) {
+    #resume article dl {
+        flex: auto;
+    }
 }
 
 #resume article dl a {
@@ -201,9 +207,17 @@ nav ul li a{
     color:#86868b;
 }
 
+
 #resume article ul {
     flex: 2.2;
     font-size: 18px;
+}
+
+@media only screen and (max-width:909px) {
+    #resume article ul {
+        flex: auto;
+        width: 100%;
+    }
 }
 
 #resume article ul li {
@@ -222,6 +236,13 @@ nav ul li a{
     padding: 10px 60px;
 }
 
+@media only screen and (max-width:976px) {
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 #portfolio h2 {
     margin-top: 96px;
     font-size: 96px;
@@ -236,6 +257,13 @@ nav ul li a{
     margin-bottom: 12px;
     border-radius: 10px;
     background-color: #FBFBFD;
+}
+
+@media only screen and (max-width:976px) {
+    #portfolio article {
+        width: 50%;
+        height: 50%;
+    }
 }
 
 #portfolio article h3 {
@@ -266,6 +294,12 @@ nav ul li a{
     font-size: smaller;
 }
 
+@media only screen and (max-width:976px) {
+    #portfolio article dl {
+        display: none;
+    }
+}
+
 #portfolio article dl div{
     margin: 8px 0;
     display: flex;
@@ -294,6 +328,21 @@ nav ul li a{
     transform: translateY(-50%);
     right: 45px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width:976px) {
+    #portfolio .preview-img {
+        height: 100%;
+        width: 100%;
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #ffffff;
+        transform: translateY(-50%) translateX(-50%);
+        right: 45px;
+        border-radius: 10px;
+    }
 }
 
 .preview-img img {
@@ -333,6 +382,46 @@ footer .footer-inner {
     margin-left: 10px;
 }
 
-.footer-inner .footer-social img{
+.footer-inner .footer-social img {
     width: 32px;
 }
+
+@media only screen and (max-width:1145px) {
+    #resume article {
+        /* display: block; */
+        /* flex-wrap: wrap; */
+        /* padding: 30px 45px; */
+        /* margin-bottom: 12px; */
+        /* border-radius: 10px; */
+        /* background-color: #FBFBFD; */
+    }
+
+    #resume article span {
+        /* display: block; */
+        /* position: absolute;
+        top: 0;
+        margin-top: -16px;
+        height: 5px;
+        width: 50px;
+        background-color: #1d1d1f; */
+    }
+    
+    #resume article:first-of-type dl div {
+        /* width: 100%; */
+    }
+    
+    #resume article dl dt {
+        width: 20%;
+
+        /* font-weight: 500; */
+    }
+
+    #resume article dl div {
+        /* width: 100%; */
+        
+        /* display: block; */
+        
+        /* margin: 6px 0; */
+    }
+}
+
