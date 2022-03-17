@@ -183,6 +183,13 @@ nav ul li a{
     }
 }
 
+@media only screen and (max-width:750px) {
+    #resume article dl {
+        display: block;
+        width: 100%;
+    }
+}
+
 #resume article dl a {
     color: #86868b;
 }
@@ -192,6 +199,13 @@ nav ul li a{
     display:flex;
     margin: 6px 0;
 }
+
+@media only screen and (max-width:750px) {
+    #resume article dl div{
+        display: block;
+    }
+}
+
 #resume article:first-of-type dl div {
     width: 50%;
 }
@@ -199,6 +213,19 @@ nav ul li a{
 #resume article dl dt {
     width: 14%;
     font-weight: 500;
+}
+
+@media only screen and (max-width:1145px) {
+    #resume article dl dt {
+        width: 20%;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+    #resume article dl dt{
+        width: 100%;
+    }
 }
 
 #resume article dl dd {
@@ -386,42 +413,5 @@ footer .footer-inner {
     width: 32px;
 }
 
-@media only screen and (max-width:1145px) {
-    #resume article {
-        /* display: block; */
-        /* flex-wrap: wrap; */
-        /* padding: 30px 45px; */
-        /* margin-bottom: 12px; */
-        /* border-radius: 10px; */
-        /* background-color: #FBFBFD; */
-    }
 
-    #resume article span {
-        /* display: block; */
-        /* position: absolute;
-        top: 0;
-        margin-top: -16px;
-        height: 5px;
-        width: 50px;
-        background-color: #1d1d1f; */
-    }
-    
-    #resume article:first-of-type dl div {
-        /* width: 100%; */
-    }
-    
-    #resume article dl dt {
-        width: 20%;
-
-        /* font-weight: 500; */
-    }
-
-    #resume article dl div {
-        /* width: 100%; */
-        
-        /* display: block; */
-        
-        /* margin: 6px 0; */
-    }
-}
 
