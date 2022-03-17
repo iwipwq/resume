@@ -10,6 +10,7 @@
     list-style: none;
     line-height: 1.5;
     color: #1d1d1f;
+    word-break: break-all;
 }
 
 .a11y-elem {
@@ -50,6 +51,12 @@ nav {
     justify-content: space-between;
 }
 
+@media only screen and (max-width:520px) {
+    nav {
+        padding: 10px 30px;
+    }
+}
+
 .nav-logo small {
     font-size: 14px;
     font-weight:400;
@@ -65,6 +72,16 @@ nav ul {
     right: 0;
     display: flex;
     gap: 70px;
+}
+
+@media only screen and (max-width:750px) {
+    nav ul {
+        display: none;
+    }
+
+    .a11y-nav {
+        display: block;
+    }
 }
 
 nav ul li a{
@@ -115,6 +132,12 @@ nav ul li a{
     padding: 10px 60px;
 }
 
+@media only screen and (max-width:520px) {
+    #resume {
+        padding: 10px 30px;
+    }
+}
+
 #resume .resume-wrap {
     margin: 222px 0 120px;
     display: flex;
@@ -152,6 +175,12 @@ nav ul li a{
     margin-bottom: 12px;
     border-radius: 10px;
     background-color: #FBFBFD;
+}
+
+@media only screen and (max-width:520px) {
+    #resume article {
+        padding: 15px 22px;
+    }
 }
 
 #resume article span {
@@ -208,6 +237,12 @@ nav ul li a{
 
 #resume article:first-of-type dl div {
     width: 50%;
+}
+
+@media only screen and (max-width:750px) {
+    #resume article:first-of-type dl div {
+        width: 100%;
+    }
 }
 
 #resume article dl dt {
@@ -267,6 +302,12 @@ nav ul li a{
     #portfolio {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    #portfolio {
+        padding: 10px 30px;
     }
 }
 
