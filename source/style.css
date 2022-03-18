@@ -13,7 +13,7 @@
     word-break: break-all;
 }
 
-.a11y-elem {
+.visually-hidden {
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
     overflow: hidden;
@@ -36,6 +36,10 @@ header {
     background-color: rgba(255,255,255,0.72); */
 }
 
+header #menu-state {
+    display: none;
+}
+
 scroll-actvie {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
@@ -49,12 +53,6 @@ nav {
     padding: 10px 60px;
 }
 
-@media only screen and (max-width:520px) {
-    nav {
-        padding: 10px 30px;
-    }
-}
-
 .nav-logo small {
     font-size: 14px;
     font-weight:400;
@@ -66,6 +64,17 @@ nav {
     font-size: 24px;
 }
 
+@media only screen and (max-width:520px) {
+    nav {
+        padding: 10px 30px;
+        
+    }
+
+    .nav-logo {
+        text-align: right;
+    }
+}
+
 nav ul {
     position: absolute;
     right: 60px;
@@ -73,15 +82,68 @@ nav ul {
     transform: translateY(50%);
 }
 
-@media only screen and (max-width:750px) {
+nav .menu-toggle {
+    display: none;
+    float: left;
+}
+
+nav .menu-state-label {
+    display: none;
+}
+
+@media only screen and (max-width:520px) {
     nav ul {
         display: none;
     }
 
-    .a11y-nav {
+    nav .menu-toggle {
         display: block;
     }
+
+    nav .menu-state-label {
+        display: block;
+        position: absolute;
+        top: 20px;
+    }
 }
+
+nav .menu-icon-top-cont {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+nav .menu-icon-top {
+    position: absolute;
+    width: 14px;
+    border: 1px solid #1d1d1f;
+    left: 50%;
+    top: 7px;
+    transform: translate(-50%, 0px);
+}
+
+nav .menu-icon-bottom-cont {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+nav .menu-icon-bottom {
+    position: absolute;
+    width: 14px;
+    border: 1px solid #1d1d1f;
+    left: 50%;
+    bottom: 7px;
+    transform: translate(-50%, 0px);
+}
+
+/* .menu-toggle .icon {
+    mask-image: url(./images/menu.svg);
+    -webkit-mask-image: url(./images/menu.svg);
+    background-color: #1d1d1f;
+} */
+
+
 
 nav ul li {
     margin-left: 20px;
