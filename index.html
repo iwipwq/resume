@@ -9,24 +9,36 @@
 </head>
 <body>
     <header>
+        <input type="checkbox" id="menu-state">
         <nav>
             <div class="nav-logo">
                 <small>Frontend Developer</small>
                 <strong>Kim moon hong</strong>
             </div>
+            <a href="#menu-state" class="menu-open">
+                <span class="visually-hidden">메인 메뉴 열기</span>
+            </a>
+            <a href="#" class="menu-close">
+                <span class="visually-hidden">메인 메뉴 닫기</span>
+            </a>
+            <label for="menu-state" class="menu-state-label">
+                <span class="menu-icon-top-cont">
+                    <span class="menu-icon-top"></span>
+                </span>
+                <span class="menu-icon-bottom-cont">
+                    <span class="menu-icon-bottom"></span>
+                </span>
+            </label>
             <ul>
                 <li><a href="#resume">RESUME</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
             </ul>
-            <ul class="a11y-nav">
-                <li></li>
-            </ul>
         </nav>
     </header>
     <main>
-        <h1 class="a11y-elem">김문홍 개발자 이력서페이지</h1>
+        <h1 class="visually-hidden">김문홍 개발자 이력서페이지</h1>
         <section id="home">
-            <h2 class="a11y-elem">홈 화면</h2>
+            <h2 class="visually-hidden">홈 화면</h2>
             <img src="./source/images/s04.jpg" alt="">
             <div>
                 <p class="home-title">성장하는 
@@ -35,7 +47,7 @@
             </div>
         </section>
         <section id="resume">
-            <h2 class="a11y-elem">이력서</h2>
+            <h2 class="visually-hidden">이력서</h2>
             <div class="resume-inner">
                 <strong>안녕하세요😍
 김문홍입니다.</strong>
@@ -66,7 +78,7 @@
                     </div>
                     <div>
                         <dt>깃허브</dt>
-                        <dd><a href="https://github.com/iwipwq/">github.com/iwipwq/</a></dd>
+                        <dd><a href="iwipwq.github.com">iwipwq.github.com</a></dd>
                     </div>
                 </dl>
             </article>
@@ -178,7 +190,7 @@
                 <li><a href="mailto:support@toss.im">이메일: mhnormal@naver.com</a></li>
             </ul>
             <ul class="footer-social">
-                <li><a href="https://github.com/iwipwq/"><img src="source/images/GitHub-Mark-120px-plus.png" alt="github 바로가기"></a></li>
+                <li><a href="https://iwipwq.github.com"><img src="source/images/GitHub-Mark-120px-plus.png" alt="github 바로가기"></a></li>
                 <li><a href="https://velog.io/@mhnormal"><img src="source/images/icon-velog.svg" alt="velog 바로가기"></a></li>
                 <li><a href="https://www.instagram.com/gimceolsuceolsu7/"><img src="source/images/glyph-logo_May2016.png" alt="instagram 바로가기"></a></li>
             </ul>
