@@ -8,6 +8,11 @@ resume
 footer추가
 - 20220317 미디어쿼리 추가 (520, ,689, 750, 960, ,976, 1079, 1145)
 - 수정해야할것 
- 1.미디어쿼리 정리
- 2.인적사항란 한줄로 (max-width520 display: block -> flex)
- 3.기술란 (max-width520  width:100%) 
+- 1.미디어쿼리 정리
+- 2.인적사항란 한줄로 (max-width520 display: block -> flex)
+- 3.기술란 (max-width520  width:100%) 
+- 20220318 반응형 메뉴
+- 1. 스타일링 수정 (글자로고에 맞게) 선두께 , 선갯수 3개?
+- 2. target 지정
+- 3. ul css 수정
+- 4. animation
