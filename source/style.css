@@ -46,7 +46,7 @@ scroll-actvie {
     background-color: rgba(255,255,255,0.72);
 }
 
-nav {
+#main-menu {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
@@ -64,8 +64,78 @@ nav {
     font-size: 24px;
 }
 
+#main-menu .menu-list {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    transform: translateY(50%);
+}
+
+#main-menu .menu-list li {
+    margin-left: 20px;
+    float: left;
+}
+
+#main-menu .menu-list li a{
+    font-size: 18px;
+    color: #1d1d1f;
+}
+
+#main-menu .menu-open {
+    display: none;
+}
+
+#main-menu .menu-state-label {
+    display: none;
+}
+
+#main-menu .menu-icon-top-cont {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+}
+
+#main-menu .menu-icon-top {
+    position: absolute;
+    width: 28px;
+    border: 1px solid #1d1d1f;
+    left: 50%;
+    top: 12px;
+    transform: translate(-50%, 0px);
+}
+
+#main-menu .menu-icon-middle-cont {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+}
+
+#main-menu .menu-icon-middle {
+    position: absolute;
+    width: 28px;
+    border: 1px solid #1d1d1f;
+    left: 50%;
+    bottom: 23px;
+    transform: translate(-50%, 0px);
+}
+
+#main-menu .menu-icon-bottom-cont {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+}
+
+#main-menu .menu-icon-bottom {
+    position: absolute;
+    width: 28px;
+    border: 1px solid #1d1d1f;
+    left: 50%;
+    bottom: 12px;
+    transform: translate(-50%, 0px);
+}
+
 @media only screen and (max-width:520px) {
-    nav {
+    #main-menu {
         padding: 10px 30px;
         
     }
@@ -73,69 +143,111 @@ nav {
     .nav-logo {
         text-align: right;
     }
-}
+    
+    #main-menu .menu-list {
+        display: none;
+        position: initial;
+        text-align: center;
+    }
+    
+    #main-menu .menu-list li {
+        margin-left: 0;
+        float: none;
+        border-top: 1px solid #565656;
+        padding: 10px 0;
+    }
+    
+    #main-menu .menu-list li a{
+        font-size: 24px;
+        color: #fff;
+        
+    }
 
-nav ul {
-    position: absolute;
-    right: 60px;
-    top: 10px;
-    transform: translateY(50%);
-}
+    #main-menu .menu-open {
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        width: 48px;
+        height: 48px;
+        z-index: 10;
+    }
 
-nav .menu-toggle {
-    display: none;
-    float: left;
-}
+    #main-menu .menu-close {
+        display: none;
+    }
+    
+    #main-menu .menu-state-label {
+        display: block;
+        position: absolute;
+        top: 10px;
+        width: 48px;
+        height: 48px;
+        pointer-events: auto;
+        z-index: 3;
+    }
 
-nav .menu-state-label {
-    display: none;
-}
+    /* #header .menu-state:checked ~ #main-menu, */
 
-@media only screen and (max-width:520px) {
-    nav ul {
+    #menu-state:target ~ #main-menu {
+        height: 100vh;
+        background-color: #1d1d1f;
+    }
+
+    #menu-state:target ~ #main-menu .nav-logo small {
+        color: #ffffff;
+    }
+    
+    #menu-state:target ~ #main-menu .nav-logo strong {
+        color: #ffffff;
+    }
+
+    #menu-state:target ~#main-menu .menu-open {
         display: none;
     }
 
-    nav .menu-toggle {
+    #menu-state:target ~ #main-menu .menu-close {
         display: block;
-    }
-
-    nav .menu-state-label {
-        display: block;
+        color: #fff;
         position: absolute;
-        top: 20px;
+        top: 10px;
+        width: 48px;
+        height: 48px;
+        z-index: 10;
     }
+
+    #menu-state:target ~ #main-menu .menu-list {
+        display: block
+    }
+    
+    #menu-state:target ~ #main-menu .menu-icon-top {
+        position: absolute;
+        border: 1px solid #ffffff;
+        left: 50%;
+        top: 12px;
+        transform: translate(-50%, 0px);
+    }
+    
+    #menu-state:target ~ #main-menu .menu-icon-middle {
+        position: absolute;
+        border: 1px solid #ffffff;
+        left: 50%;
+        bottom: 23px;
+        transform: translate(-50%, 0px);
+    }
+    
+
+    #menu-state:target ~ #main-menu .menu-icon-bottom {
+        position: absolute;
+        border: 1px solid #ffffff;
+        left: 50%;
+        bottom: 12px;
+        transform: translate(-50%, 0px);
+    }
+    
 }
 
-nav .menu-icon-top-cont {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-}
 
-nav .menu-icon-top {
-    position: absolute;
-    width: 14px;
-    border: 1px solid #1d1d1f;
-    left: 50%;
-    top: 7px;
-    transform: translate(-50%, 0px);
-}
-
-nav .menu-icon-bottom-cont {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-}
-
-nav .menu-icon-bottom {
-    position: absolute;
-    width: 14px;
-    border: 1px solid #1d1d1f;
-    left: 50%;
-    bottom: 7px;
-    transform: translate(-50%, 0px);
-}
 
 /* .menu-toggle .icon {
     mask-image: url(./images/menu.svg);
@@ -145,15 +257,7 @@ nav .menu-icon-bottom {
 
 
 
-nav ul li {
-    margin-left: 20px;
-    float: left;
-}
 
-nav ul li a{
-    font-size: 18px;
-    color: #1d1d1f;
-}
 
 /* main */
 
@@ -216,20 +320,20 @@ nav ul li a{
     }
 }
 
-#resume div strong {
+#resume .resume-inner strong {
     font-size: 78px;
     font-weight: 700;
     white-space: pre-line;
 }
 
 @media only screen and (max-width:1079px) {
-    #resume div strong {
+    #resume .resume-inner strong {
         font-size: 64px;
     }
 }
 
 @media only screen and (max-width:520px) {
-    #resume div strong {
+    #resume .resume-inner strong {
         font-size: 48px;
     }
 }
@@ -346,17 +450,17 @@ nav ul li a{
 }
 
 @media only screen and (max-width:750px) {
-    #resume article dl div{
+    #resume .skill-set dl div{
         display: block;
     }
 }
 
-#resume article:first-of-type dl div {
+#resume .info dl div {
     width: 50%;
 }
 
 @media only screen and (max-width:750px) {
-    #resume article:first-of-type dl div {
+    #resume .info dl div {
         width: 100%;
     }
 }
@@ -366,7 +470,7 @@ nav ul li a{
     font-weight: 500;
 }
 
-@media only screen and (max-width:1145px) {
+@media only screen and (max-width:1162px) {
     #resume article dl dt {
         width: 20%;
     }
@@ -374,7 +478,11 @@ nav ul li a{
 }
 
 @media only screen and (max-width:750px) {
-    #resume article dl dt{
+    /* #resume .info dl dt {
+        width: 20%;
+    } */
+
+    #resume .skill-set dl dt{
         width: 100%;
     }
 }
@@ -484,7 +592,15 @@ nav ul li a{
     top: 28px;
 }
 
-#portfolio article small {
+#portfolio article .team-bedge {
+    padding: 4px 6px;
+    color:#ffffff;
+    background-color: #cf6f42;
+    border-radius: 6px;
+    line-height: 1;
+}
+
+#portfolio article .personal-bedge {
     padding: 4px 6px;
     color:#ffffff;
     background-color: #a342cf;
