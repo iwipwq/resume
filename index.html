@@ -10,7 +10,7 @@
 <body>
     <header>
         <input type="checkbox" id="menu-state">
-        <nav>
+        <nav id="main-menu">
             <div class="nav-logo">
                 <small>Frontend Developer</small>
                 <strong>Kim moon hong</strong>
@@ -21,15 +21,18 @@
             <a href="#" class="menu-close">
                 <span class="visually-hidden">메인 메뉴 닫기</span>
             </a>
-            <label for="menu-state" class="menu-state-label">
+            <label for="menu-state" class="menu-state-label" aria-hidden="true">
                 <span class="menu-icon-top-cont">
                     <span class="menu-icon-top"></span>
+                </span>
+                <span class="menu-icon-middle-cont">
+                    <span class="menu-icon-middle"></span>
                 </span>
                 <span class="menu-icon-bottom-cont">
                     <span class="menu-icon-bottom"></span>
                 </span>
             </label>
-            <ul>
+            <ul class="menu-list">
                 <li><a href="#resume">RESUME</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
             </ul>
@@ -60,7 +63,7 @@
 위해 접근성 부분에서 노력하고 있습니다.</p> 
                 </div>
             </div>
-            <article>
+            <article class="info">
                 <h3>인적사항</h3>
                 <span></span>
                 <dl>
@@ -78,11 +81,11 @@
                     </div>
                     <div>
                         <dt>깃허브</dt>
-                        <dd><a href="iwipwq.github.com">iwipwq.github.com</a></dd>
+                        <dd><a href="https://github.com/iwipwq/">github.com/iwipwq</a></dd>
                     </div>
                 </dl>
             </article>
-            <article>
+            <article class="skill-set">
                 <h3>기술</h3>
                 <span></span>
                 <dl>
@@ -122,14 +125,13 @@
                     <li>HandyStudio 브랜딩 공모전 수상<small>2019.11</small></li>
                 </ul>
             </article>
-            <img src="" alt="">
         </section>
         <section id="portfolio">
             <h2>포트폴리오</h2>
             <article>
                 <h3>감귤마켓</h3>
                 <div class="portfolio-desc-bedge">
-                    <small>팀 프로젝트</small>
+                    <small class="team-bedge">팀 프로젝트</small>
                     <a class="project-link" href="https://github.com/iwipwq/tangerine-market">바로가기(github)</a>
                 </div>
                 <dl>
@@ -156,7 +158,7 @@
             <article>
                 <h3>포트폴리오 페이지</h3>
                 <div class="portfolio-desc-bedge">
-                    <small>개인 프로젝트</small>
+                    <small class="personal-bedge">개인 프로젝트</small>
                     <a class="project-link" href="https://github.com/iwipwq/tangerine-market">바로가기(github)</a>
                 </div>
                 <dl>
@@ -178,7 +180,7 @@
                         <dd>2022.03.14 ~2022.03.17</dd>
                     </div>
                 </dl>
-                <a class="preview-img" href="https://github.com/iwipwq/tangerine-market"><img src="source/images/s04.jpg" alt="감귤마켓 프로젝트 미리보기 이미지"></a>
+                <a class="preview-img" href="https://github.com/iwipwq/resume"><img src="source/images/s04.jpg" alt="웹 포트폴리오 프로젝트 미리보기 이미지"></a>
             </article>
         </section>
     </main>
@@ -190,7 +192,7 @@
                 <li><a href="mailto:support@toss.im">이메일: mhnormal@naver.com</a></li>
             </ul>
             <ul class="footer-social">
-                <li><a href="https://iwipwq.github.com"><img src="source/images/GitHub-Mark-120px-plus.png" alt="github 바로가기"></a></li>
+                <li><a href="https://github.com/iwipwq/"><img src="source/images/GitHub-Mark-120px-plus.png" alt="github 바로가기"></a></li>
                 <li><a href="https://velog.io/@mhnormal"><img src="source/images/icon-velog.svg" alt="velog 바로가기"></a></li>
                 <li><a href="https://www.instagram.com/gimceolsuceolsu7/"><img src="source/images/glyph-logo_May2016.png" alt="instagram 바로가기"></a></li>
             </ul>
