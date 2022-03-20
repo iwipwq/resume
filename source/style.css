@@ -68,23 +68,53 @@ scroll-actvie {
     position: absolute;
     right: 60px;
     top: 10px;
-    transform: translateY(50%);
+    transform: translate(0, 50%);
     transition: all .2s ease-in-out;
 }
 
-#main-menu .menu-list init {
-    transform: translate(-500px,500px);
+#main-menu .menu-list.init {
+    top: 480px;
+    right: 50%;
+    transform: translate(50%, 50%)
 }
 
 #main-menu .menu-list li {
     margin-left: 20px;
     float: left;
+    border: 0px solid #1d1d1f;
+    border-radius: 0;
+    /* background-color: transparent; */
+    padding: 0;
 }
 
 #main-menu .menu-list li a{
     font-size: 18px;
     color: #1d1d1f;
 }
+
+#main-menu .menu-list.init li {
+    border: 2px solid #1d1d1f;
+    /* background-color: #1d1d1f; */
+    border-radius: 50px;
+    padding: 10px 20px;
+    line-height: 1;
+    margin: 0 10px;
+}
+
+/* #main-menu .menu-list.init li a{
+    color: #fff;
+} */
+#main-menu .menu-list.init li a::after{
+    content: ' +';
+    
+}
+
+/* #main-menu .menu-list.init li:first-of-type {
+    background-color: #cf6f42;
+}
+#main-menu .menu-list.init li:last-of-type {
+    background-color: #a342cf;
+} */
 
 #main-menu .menu-open {
     display: none;
