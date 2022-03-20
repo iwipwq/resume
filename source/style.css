@@ -69,6 +69,11 @@ scroll-actvie {
     right: 60px;
     top: 10px;
     transform: translateY(50%);
+    transition: all .2s ease-in-out;
+}
+
+#main-menu .menu-list init {
+    transform: translate(-500px,500px);
 }
 
 #main-menu .menu-list li {
@@ -235,7 +240,6 @@ scroll-actvie {
         bottom: 23px;
         transform: translate(-50%, 0px);
     }
-    
 
     #menu-state:target ~ #main-menu .menu-icon-bottom {
         position: absolute;
