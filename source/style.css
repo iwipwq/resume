@@ -67,9 +67,9 @@ scroll-actvie {
 #main-menu .menu-list {
     position: absolute;
     right: 60px;
-    top: 10px;
-    transform: translate(0, 50%);
-    transition: all .2s ease-in-out;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: all .3s ease-in-out;
 }
 
 #main-menu .menu-list.init {
@@ -81,10 +81,11 @@ scroll-actvie {
 #main-menu .menu-list li {
     margin-left: 20px;
     float: left;
-    border: 0px solid #1d1d1f;
+    border: 2px solid transparent;
     border-radius: 0;
     /* background-color: transparent; */
     padding: 0;
+    transition: all .2s;
 }
 
 #main-menu .menu-list li a{
@@ -101,12 +102,30 @@ scroll-actvie {
     margin: 0 10px;
 }
 
+#main-menu .menu-list.init li:first-of-type:hover {
+    border: 2px solid #cf6f42;
+    background-color: #cf6f42;
+    scale: 2;
+}
+
+#main-menu .menu-list.init li:last-of-type:hover {
+    border: 2px solid #a342cf;
+    background-color: #a342cf;
+    scale: 2;
+}
+
 /* #main-menu .menu-list.init li a{
     color: #fff;
 } */
+
 #main-menu .menu-list.init li a::after{
-    content: ' +';
-    
+    content: ' +';  
+    color: inherit;
+    font-weight: inherit;
+}
+
+#main-menu .menu-list.init li:hover a{
+    color: #ffffff; 
 }
 
 /* #main-menu .menu-list.init li:first-of-type {
