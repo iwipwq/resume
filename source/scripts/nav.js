@@ -1,5 +1,6 @@
 (function (){
     const menuListElement = document.querySelector('.menu-list');
+    const navBackground = document.querySelector('header');
     const transitionStartingPoint= 2;
 
     const CheckScrollAndToggleClass = function(elem,px) {
@@ -11,5 +12,6 @@
 
     this.addEventListener('scroll',() => {
         CheckScrollAndToggleClass(menuListElement,transitionStartingPoint)
+        CheckScrollAndToggleClass(navBackground,transitionStartingPoint)
     });
 })();
