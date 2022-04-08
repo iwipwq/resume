@@ -691,6 +691,16 @@ header #menu-state {
     left: 45px;
 }
 
+@media only screen and (max-width:520px) {
+    #portfolio article h3 {
+        margin: 63px 15px 25px;
+    }
+
+    #portfolio .portfolio-desc-bedge {
+        left: 15px;
+    }
+}
+
 #portfolio article .team-bedge {
     padding: 4px 6px;
     color:#ffffff;
@@ -718,17 +728,27 @@ header #menu-state {
 
 #portfolio article dl {
     position: absolute;
-    display: none;
     top: 142px;
     padding: 0px 45px 20px;
     height: auto;
     width: 100%;
-    background-color: rgba(251, 251, 253, 1);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 1;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+#portfolio article dl:hover{
+    opacity: 1; 
 }
 
 #portfolio article dl div{
     margin: 8px 0;
+    display: flex;
+}
+
+#portfolio article dl div:first-of-type{
+    margin: 20px 0 8px;
     display: flex;
 }
 
