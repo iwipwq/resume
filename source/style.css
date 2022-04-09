@@ -689,6 +689,7 @@ header #menu-state {
     position: absolute;
     top: 28px;
     left: 45px;
+    z-index: 10;
 }
 
 @media only screen and (max-width:520px) {
@@ -728,41 +729,63 @@ header #menu-state {
 
 #portfolio article dl {
     position: absolute;
-    top: 142px;
     padding: 0px 45px 20px;
-    height: auto;
+    height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 1);
     z-index: 1;
     opacity: 0;
-    transition: opacity .2s ease-out;
+    border-radius: 10px;
+    backdrop-filter: blur(25px);
+    transition: opacity .2s ease-in-out;
 }
 
-#portfolio article dl:hover{
+#portfolio article:hover dl{
     opacity: 1; 
 }
 
 #portfolio article dl div{
-    margin: 8px 0;
-    display: flex;
+    margin: 14px 0;
+    /* display: flex; */
 }
 
 #portfolio article dl div:first-of-type{
-    margin: 20px 0 8px;
-    display: flex;
+    margin: 142px 0 8px;
+    /* display: flex; */
 }
 
 #portfolio article dl div dt {
-    /* width: 12%; */
-    font-size: 18px;
-    font-weight: 400;
+    display: inline;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d1d1f;
 }
 
+#portfolio article dl div:nth-child(1) dt:before {
+    content: '⚔️ ';
+}
+#portfolio article dl div:nth-child(2) dt::before {
+    content: '📜 ';
+}
+#portfolio article dl div:nth-child(3) dt::before {
+    content: '👩‍👧‍👦 ';
+}
+#portfolio article dl div:nth-child(4) dt::before {
+    content: '⌛ ';
+}
+
+
 #portfolio article dl div dd {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 18px;
     font-weight: 400;
-    color: #86868b;
+    color: #1d1d1f;
+}
+
+#portfolio article dl div dd:first-of-type{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1d1d1f;
 }
 
 #portfolio .preview-img {
