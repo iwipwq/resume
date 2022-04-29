@@ -636,11 +636,7 @@ header #menu-state {
 /* portfolio section */
 #portfolio {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
     max-width: 1200px;
-    justify-content: center;
     margin: 0 auto;
     padding: 280px 60px 50px;
 }
@@ -652,10 +648,7 @@ header #menu-state {
 }
 
 #portfolio h2 {
-    position: absolute;
-    left: 50%;
     top: 161px;
-    transform: translate(-50%,-81px);
     font-size: 96px;
     font-weight: 700;
     text-align: center;
@@ -674,12 +667,81 @@ header #menu-state {
     }
 }
 
+#portfolio .portfolio-info {
+    margin-bottom: 18px;
+    padding: 32px 45px;
+    border-radius: 10px;
+    background-color: #FBFBFD;
+}
+
+#portfolio .portfolio-info-title {
+
+}
+
+#portfolio .portfolio-info-group {
+    margin-top: 24px;
+}
+
+#portfolio .portfolio-info .personal-bedge {
+    margin: 5px 0;
+    display: block;
+    padding: 4px 6px;
+    color:#ffffff;
+    background-color: #a342cf;
+    border-radius: 6px;
+    line-height: 1;
+    width: fit-content;
+}
+
+#portfolio .portfolio-info .team-bedge {
+    margin: 5px 0;
+    display: block;
+    padding: 4px 6px;
+    color:#ffffff;
+    background-color: #cf6f42;
+    border-radius: 6px;
+    line-height: 1;
+    width: fit-content;
+}
+
+
+#portfolio .portfolio-info .project-link {
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    padding: 4px 6px;
+    color:#ffffff;
+    background-color: #383838;
+    border-radius: 6px;
+    line-height: 1;
+    width: fit-content;
+}
+
+#portfolio .portfolio-info .project-link-live {
+    margin: 5px 0;
+    display: block;
+    padding: 4px 6px;
+    color:#ffffff;
+    background-color: #d23030;
+    border-radius: 6px;
+    line-height: 1;
+    width: fit-content;
+}
+
+#portfolio .inner-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
 #portfolio article {
     position: relative;
     display: flex;
     flex-direction: column;
     flex: 1 0 350px;
-    margin-top: -10px;
     /* padding: 30px 45px; */
     margin-bottom: 12px;
     border-radius: 10px;
