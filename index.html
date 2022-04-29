@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Kim moon hong</title>
-    <link rel="stylesheet" href="source/style.css">
+    <link rel="stylesheet" href="source/css/style.css">
 </head>
 <body>
     <header class="init">
@@ -44,23 +44,23 @@
         <section id="home">
             <h2 class="visually-hidden">홈 화면</h2>
             <img src="./source/images/s04.jpg" alt="">
-            <div>
-                <p class="home-title">성장하는 개발자</p>
-                <p class="home-desc">프론트엔드 개발자 김문홍입니다.</p>
+            <div class="home-group">
+                <div class="home-inner-group">
+                    <p class="home-title">몰입하는 개발자</p>
+                    <p class="home-desc">개발에 몰입하는 김문홍입니다.</p>
+                </div>
             </div>
         </section>
         <section id="resume">
             <h2 class="visually-hidden">이력서</h2>
             <div class="resume-inner">
-                <strong>안녕하세요
+                <strong>안녕하세요😍
 김문홍입니다.</strong>
                 <div class="resume-subtitle">
-                    <p>다양하고 새로운 경험을 통해, 
-언제나 발전을 추구하는 
-개발자 입니다.</p>
-                    <p>빠르게 변화하는 시대의 흐름에서
-사람들에게 도움이 될 수 있는
-새로운 기술을 찾는 일을 좋아합니다.
+                    <p>하고 싶은 게 많은 
+욕심 많은 사람입니다.</p>
+                    <p>새로운 기술을 배우는 걸 좋아합니다.
+사실 새 것이라면 다 좋아합니다.😘
                     </p> 
                 </div>
             </div>
@@ -130,11 +130,40 @@
         <section id="portfolio">
             <h2>포트폴리오</h2>
             <article>
+                <h3>{ Curlybrackets }</h3>
+                <div class="portfolio-desc-bedge">
+                    <small class="personal-bedge">개인 프로젝트</small>
+                    <a class="project-link" href="https://github.com/iwipwq/blog">바로가기(github)</a>
+                    <a class="project-link-live" href="https://iwipwq-nest.herokuapp.com">LIVE(Heroku)</a>
+                </div>
+                <dl>
+                    <div>
+                        <dt>기술스텍</dt>
+                        <dd>프론트엔드 : React, Sass</dd>
+                        <dd>백엔드 : NodeJS, ExpressJS, MongoDB, Mongoose, Multer</dd>
+                    </div>
+                    <div>
+                        <dt>구현내용</dt>
+                        <dd>누구나 가입해서 글을 쓸 수 있는 블로그 서비스입니다.</dd>
+                    </div>
+                    <div>
+                        <dt>프로젝트인원</dt>
+                        <dd>개인</dd>
+                    </div>
+                    <div>
+                        <dt>프로젝트기간</dt>
+                        <dd>2022.03.29 ~2022.04.08</dd>
+                    </div>
+                </dl>
+                <a class="preview-img" href="https://github.com/iwipwq/blog"><img src="source/images/curly.png" alt="블로그 서비스 미리보기이미지"></a>
+            </article>
+            <article>
                 <h3>감귤마켓</h3>
                 <a class="preview-img" href="https://github.com/iwipwq/tangerine-market"><img src="./source/images/tangerine-market-logo.png" alt="감귤마켓 프로젝트 미리보기 이미지"></a>
                 <div class="portfolio-desc-bedge">
                     <small class="team-bedge">팀 프로젝트</small>
                     <a class="project-link" href="https://github.com/iwipwq/tangerine-market">바로가기(github)</a>
+                    <a class="project-link-live" href="https://iwipwq.github.io/tangerine-market/src/pages/splash.html">LIVE(github page)</a>
                 </div>
                 <dl>
                     <div>
@@ -183,35 +212,7 @@
                     </div>
                 </dl>
             </article>
-            <article>
-                <h3>NEST (블로그API,블로그서비스)</h3>
-                <div class="portfolio-desc-bedge">
-                    <small class="personal-bedge">개인 프로젝트</small>
-                    <a class="project-link" href="https://github.com/iwipwq/blog">바로가기(github)</a>
-                </div>
-                <dl>
-                    <div>
-                        <dt>기술스텍</dt>
-                        <dd>React, Sass</dd>
-                        <dd>ExpressJS, Mongoose, Multer</dd>
-                    </div>
-                    <div>
-                        <dt>구현내용</dt>
-                        <dd>블로그 API 작성 및 블로그 기능 구현</dd>
-                        <dd>회원가입/로그인 포스트작성,수정 기능</dd>
-                        <dd>프로필 수정, 카테고리/작가 별 글 모아보기</dd>
-                    </div>
-                    <div>
-                        <dt>프로젝트인원</dt>
-                        <dd>개인</dd>
-                    </div>
-                    <div>
-                        <dt>프로젝트기간</dt>
-                        <dd>2022.03.29 ~2022.04.08</dd>
-                    </div>
-                </dl>
-                <a class="preview-img" href="https://github.com/iwipwq/blog"><img src="source/images/2022-04-08221108.png" alt="블로그 서비스 미리보기이미지"></a>
-            </article>
+            
         </section>
     </main>
     <footer>
